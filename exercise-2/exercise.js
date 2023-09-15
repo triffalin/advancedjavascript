@@ -45,7 +45,9 @@ function removeParagraph() {
 }
 
 function changeBackgroundColor(event) {
-	console.dir(event.target);
+	// firstParagraphElement.style.backgroundColor = 'blue';
+	// firstParagraphElement.className = 'blue-bg';
+	firstParagraphElement.classList.add('blue-bg');
 }
 
 firstButtonElement.addEventListener('click', removeParagraph);
