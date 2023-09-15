@@ -15,3 +15,15 @@ anchorElement.href = 'https://academind.com';
 // document.getElementsByClassName('some-css-class')- Selects all HTML elements that have the provided CSS class
 
 // document.getElementsByTagName('tag') - Selects all HTML elements that are of the provided HTML tag type
+
+// ADD AN ELEMENT
+// 1. Create the new element
+let newAnchorElement = document.createElement('a');
+newAnchorElement.href = 'https://google.com';
+newAnchorElement.textContent = 'This lead to Google!';
+
+// 2. Get access to the parent element that should hold the new element
+let firstParagraph = document.querySelector('p');
+
+// 3. Insert the new element into the parent element content
+firstParagraph.append(newAnchorElement);
