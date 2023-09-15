@@ -34,3 +34,6 @@ let firstH1Element = document.querySelector('h1');
 // 2. Remove it!
 firstH1Element.remove();
 // firstH1Element.parentElement.removeChild(firstH1Element);  - alternative
+
+// MOVE ELEMENTS
+firstParagraph.parentElement.append(firstParagraph);
