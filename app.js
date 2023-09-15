@@ -1,1 +1,6 @@
-document.body.children[1].children[0].href = 'https://google.com';
+// "Drill into elements"
+// document.body.children[1].children[0].href = 'https://google.com';
+
+//Queryng elements
+let anchorElement = document.getElementById('external-link');
+anchorElement.href = 'https://google.com';
