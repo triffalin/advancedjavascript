@@ -41,7 +41,7 @@ console.log(thirdParagraphElement);
 //    - The second button changes the background color of the first paragraph to blue
 
 function removeParagraph() {
-	console.dir(firstButtonElement);
+	thirdParagraphElement.remove();
 }
 
 function changeBackgroundColor(event) {
