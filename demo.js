@@ -12,7 +12,7 @@ function updateRemainingCharacters(event) {
 	remainingCharsElement.textContent = remainingCharacters;
 
 	if (remainingCharacters <= 10) {
-		remainingCharacters.classList.add('warning');
+		remainingCharsElement.classList.add('warning');
 		productNameInputElement.classList.add('warning');
 	}
 }
