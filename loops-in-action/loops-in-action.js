@@ -35,3 +35,29 @@ function highlightLinks() {
 }
 
 highlightLinksButtonElement.addEventListener('click', highlightLinks);
+
+// Display your information
+
+const dummyUserData = {
+	firstName: 'Alin',
+	lastName: 'Triff',
+	age: 32,
+};
+
+const displayUserDataButtonElement =
+	document.querySelector('#user-data button');
+
+function displayUserData() {
+	const outputDataElement = document.getElementById('output-user-data');
+
+	outputDataElement.innerHTML = '';
+
+	for (const key in dummyUserData) {
+		const newUserDataListItemElement = document.createElement('li');
+		const outputText = key.toUpperCase() + ': ' + dummyUserData[key];
+		newUserDataListItemElement.textContent = outputText;
+		outputDataElement.append(newUserDataListItemElement);
+	}
+}
+
+displayUserDataButtonElement.addEventListener('click', displayUserData);
